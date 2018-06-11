@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:fillViewport="true"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+
+		<ImageView
+			android:id="@+id/photo"
+			android:layout_width="match_parent"
+			android:layout_height="320dp"
+			android:scaleType="centerCrop"
+			android:background="#757575"/>
+
+		<TextView
+			android:id="@+id/title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="24dp"
+			android:layout_marginRight="24dp"
+			android:layout_marginTop="24dp"
+			android:textSize="@dimen/material_header_text_size"
+			android:textColor="@color/primary_text"
+			tools:text="Meal title"/>
+
+		<TextView
+			style="@style/Material.TextView.Primary"
+			android:id="@+id/instructions"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="24dp"
+			android:layout_marginRight="24dp"
+			android:layout_marginTop="8dp"
+			tools:text="Put the potatoes in a large pan of cold salted water and bring to the boil. Lower the heat, cover, then simmer gently for 15 minutes until tender. Drain, then return to the pan over a low heat for 30 seconds to drive off any excess water. Mash with 1 tbsp olive oil, then season."/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="24dp"
+			android:layout_marginRight="24dp"
+			android:layout_marginTop="16dp"
+			android:textColor="@color/primary_text"
+			android:textSize="20sp"
+			tools:text="Info"/>
+
+		<LinearLayout
+			android:id="@+id/category_layout"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_marginLeft="24dp"
+			android:layout_marginRight="24dp"
+			android:layout_marginTop="4dp">
+
+			<TextView
+				style="@style/Material.TextView.Primary"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textStyle="bold"
+				android:text="@string/category"/>
+
+			<TextView
+				style="@style/Material.TextView.Primary"
+				android:id="@+id/category"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				tools:text="Seafood"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/area_layout"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_marginLeft="24dp"
+			android:layout_marginRight="24dp"
+			android:layout_marginTop="4dp">
+
+			<TextView
+				style="@style/Material.TextView.Primary"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textStyle="bold"
+				android:text="@string/area"/>
+
+			<TextView
+				style="@style/Material.TextView.Primary"
+				android:id="@+id/area"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				tools:text="British"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/video_layout"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_marginLeft="24dp"
+			android:layout_marginRight="24dp"
+			android:layout_marginTop="4dp">
+
+			<TextView
+				style="@style/Material.TextView.Primary"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textStyle="bold"
+				android:text="@string/video"/>
+
+			<TextView
+				style="@style/Material.TextView.Primary"
+				android:id="@+id/video_link"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/test_link"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/source_layout"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:layout_marginLeft="24dp"
+			android:layout_marginRight="24dp"
+			android:layout_marginTop="4dp">
+
+			<TextView
+				style="@style/Material.TextView.Primary"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textStyle="bold"
+				android:text="@string/source"/>
+
+			<TextView
+				style="@style/Material.TextView.Primary"
+				android:id="@+id/source_link"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				tools:text="@string/test_link"/>
+
+		</LinearLayout>
+
+		<TextView
+			android:id="@+id/ingredients"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="24dp"
+			android:layout_marginRight="24dp"
+			android:layout_marginTop="16dp"
+			android:textColor="@color/primary_text"
+			android:textSize="20sp"
+			android:text="@string/ingredients"/>
+
+		<LinearLayout
+			android:id="@+id/ingredients_container"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="24dp"
+			android:layout_marginRight="24dp"
+			android:layout_marginTop="8dp"
+			android:orientation="vertical"/>
+
+	</LinearLayout>
+
+</ScrollView>
